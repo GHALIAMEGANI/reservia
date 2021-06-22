@@ -5,15 +5,8 @@ margin-top: 50px}
 
 /*
 sur la page style css la formule suivante est à mettre APRES la partie à modifier
-
 @media screen "not/only/and" (max width: 1280px) ou max width:1024px  
  "not/only/and" ...
- 
-
-{
-
-
-
 */  
 
 .logo img
@@ -316,50 +309,49 @@ border-radius: 3%;
 
 #p_pop
 {
-    background-color: #f2f2f2;
-    margin-right: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: violet;
+background-color: #f2f2f2;
+margin-right: 50px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+    /*background-color: violet;*/
 }
 
 #p_pop i
 
 {
 margin-top: 40px;
-    background-color:white;
+   /* background-color:white;*/
 }
 
 #p_pop i[class="fas fa-chart-line"]
 {
-
-    margin-top: 20px;
-    font-size: 20px;
+margin-top: 20px;
+font-size: 20px;
 }
 
 .rectangle
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 
 }
 .rectangle_soleil , .rectangle_coeur , .rectangle_eau
  {
-    background-color: green;
-    display: flex;
-    flex-direction: row;
-    margin: 10px 0px 10px 0;
-    padding: 5px;
-    border-radius: 10px;
-    height: 140px;
-    width: 350px;
+        /*background-color: green;*/
+display: flex;
+flex-direction: row;
+margin: 10px 0px 10px 0;
+padding: 5px;
+border-radius: 10px;
+height: 140px;
+width: 350px;
 }
 .rectangle img
 {
-    height: 140px ;
-    width: 140px;
+height: 140px ;
+width: 140px;
 }
 
 .text 
@@ -367,7 +359,7 @@ margin-top: 40px;
 color: black;
 margin-left: 15px;
 font-size: small;
-background-color: grey;
+    /*background-color: grey;*/
 }
 
 .stars
@@ -378,7 +370,7 @@ color: #0065FC;
 
 /*ACTIVITES A MARSEILLE*/
 
-.act_13title
+#act_13title
 {
 margin-left: 50px;
 }
@@ -392,7 +384,8 @@ width: 1350px;
 
 .container h5
 
-{color: red;
+{
+    /*color: red;*/
 padding-left: 20px;
 }
 
@@ -400,28 +393,28 @@ padding-left: 20px;
 {
 display: flex;
 justify-content: space-around;
-background-color: teal;
+/*background-color: teal;*/
 }
 
 /*quotes supports des grandes photos + ombrages + bordures */
 
 .container .vieux_port
 {
-    height: 450px;
-    width: 309px;
-    box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
+height: 450px;
+width: 309px;
+box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
     /*pris sur le code du prof*/
-    border-radius: 20px;
-    background-color: tomato;
+border-radius: 20px;
+    /*background-color: tomato;*/
 }
 
 .container .calanques
 {
-    height: 450px;
-    width: 309px;
-    box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
-    background-color: teal;
-    border-radius: 20px;
+height: 450px;
+width: 309px;
+box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
+    /*background-color: teal;*/
+border-radius: 20px;
 }
 
 /*quotes des grandes photos*/
@@ -459,20 +452,20 @@ margin-left: 45px;
 .container .bis_1 .pomegue
 
 {
-    height: 250px;
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
+height: 250px;
+width: 300px;
+border-radius: 20px;
+box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
 }
 
 .container .bis_1 .frioul
 
 {
-    height: 175px;
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
-    margin-top: 30px;
+height: 175px;
+width: 300px;
+border-radius: 20px;
+box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
+margin-top: 30px;
 }
 
 /*quotes des supports des petites photos*/
@@ -480,25 +473,25 @@ margin-left: 45px;
 .container .bis_2 .n_d 
 
 {
-    background-color: violet;
-    height: 205px;
-    width: 305px;
-    border-radius: 20px;
-    box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
-    padding-top: 2px;
+    /*background-color: violet;*/
+height: 205px;
+width: 305px;
+border-radius: 20px;
+box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
+padding-top: 2px;
 }
 
 
 .container .bis_2 .longchamp
 
 {
-    background: yellow;
-    height: 220px;
-    width: 305px;
-    border-radius: 20px;
-    box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
-    margin-top: 30px;
-    padding: 1px 0 0 3px;
+/*background: yellow;*/
+height: 220px;
+width: 305px;
+border-radius: 20px;
+box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
+margin-top: 30px;
+padding: 1px 0 0 3px;
 }
 
 
@@ -506,33 +499,33 @@ margin-left: 45px;
 
 .container .bis_1 .pomegue img
 {
-    height: 180px;
-    width: 300px;
-    border-radius: 20px 20px 0 0;
+height: 180px;
+width: 300px;
+border-radius: 20px 20px 0 0;
 }
 
 .container .bis_1 .frioul img
 {
-    height: 110px;
-    width: 300px;
-    border-radius: 20px 20px 0 0;
+height: 110px;
+width: 300px;
+border-radius: 20px 20px 0 0;
 }
 
 .container .bis_2 .n_d img
 {
-    height: 140px;
-    width: 300px;
-    border-radius: 20px 20px 0 0;
-    margin-left: 2px;
-    margin-top: 3px;
+height: 140px;
+width: 300px;
+border-radius: 20px 20px 0 0;
+margin-left: 2px;
+margin-top: 3px;
 }
 
 .container .bis_2 .longchamp img
 {
-    height: 160x;
-    width: 300px;
-    border-radius: 20px 20px 0 0;
-    margin-top: 4px;
+height: 160x;
+width: 300px;
+border-radius: 20px 20px 0 0;
+margin-top: 4px;
 }
 
 /*changer les photos vieux port et pomegue car depixelises floues*/
