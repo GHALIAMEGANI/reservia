@@ -43,10 +43,10 @@
 
             <div class="filter">
                 <h1>Filtres</h1> <!--vérifier l'indentation avec eric-->
-                    <button><i class="fas fa-money-bill-wave"></i><a href="#"> Economique</a></button>
-                    <button><i class="fas fa-child"></i><a href="#"> Familial</a></button>
-                    <button><i class="fas fa-heart"></i><a href="#"> Romantique</a></button>
-                    <button><i class="fas fa-dog"></i><a href="#"> Animaux autorisés</a></button>
+                    <button><i class="fas fa-money-bill-wave"></i><a href="#">&ensp;Economique</a></button> <!--correction-->
+                    <button><i class="fas fa-child"></i><a href="#">&ensp;Familial</a></button> <!--correction-->
+                    <button><i class="fas fa-heart"></i><a href="#">&ensp;Romantique</a></button> <!--correction-->
+                    <button><i class="fas fa-dog"></i><a href="#">&ensp;Animaux autorisés</a></button> <!--correction-->
             </div>
 
         <!--POINT INFO-->
@@ -61,7 +61,7 @@
             <article> 
             <h3>Hébergements à Marseille </h3>
                 <div id="heb_13">
-                <a href="carte.html"><div class="square_cannebiere"><img src="../reservia/src/hebergements/4_small/cannebiere.jpg" alt="auberge_la_cannebiere">
+                <a href="#"><div class="square_cannebiere"><img src="../reservia/src/hebergements/4_small/cannebiere.jpg" alt="auberge_la_cannebiere">
                     <p class="name">Auberge la Cannebiere</p>
                     <p class="price">Nuit à partir de<b> 25€</b></p> 
                         <div class="stars">
@@ -149,8 +149,10 @@
         <!--LES PLUS POPULAIRES-->
 
             <aside id="p_pop">
-                <h3>Les plus populaires</h3>
-                <i class="fas fa-chart-line"></i>
+                <div class="topofpop">
+                    <h3>Les plus populaires</h3>
+                    <i class="fas fa-chart-line"></i>
+                </div>
 
                 <div class="rectangle"> <!--.populaire-->
                     <a href="#" class="rectangle_soleil">
@@ -184,7 +186,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="rectangle_eau">
+                    <a href="#" class="rectangle_bleublanc">
                         <img src="../reservia/src/hebergements/4_small/Les_+_populaires/bleu_blanc.jpg" alt="hotel_tout_bleu_et_blanc">
                         <div class="text">
                             <h4>Hôtel Tout bleu et Blanc</h4>
@@ -205,7 +207,7 @@
         <!--SECTION ACTIVITE-->
         <div id="act_13title"><h3>Activités à Marseille</h3></div>
 
-        <section class="act_13">
+        <main class="act_13">
             <div class="container">
                 <div class="vieux_port">
                     <img src="../reservia/src/activites/4_small/vieux_port.jpg" alt="vieux_port">
@@ -243,10 +245,11 @@
                     <h5>Parc Longchamp</h5>
                 </div>
             </div>
-        </section>
+        </main>
 
 
         <!--FOOTER-->
+        
         <footer>
 
         <div id="a_propos">

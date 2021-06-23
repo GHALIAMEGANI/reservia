@@ -143,7 +143,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 /*align-items center  align self: center comment aligner les icones ?*/
-
 }
 
 .filter button
@@ -151,14 +150,13 @@ align-items: center;
 border-radius: 25px;
 font-size: 1.1em;
 display: flex;
-justify-content: center;
+justify-content: flex-end;
 align-items: center;
 background-color: white;
-border-style: solid;
+border-style: dotted;
 border-color: #f2f2f2;
 
 /*le gris est plus soutenu */
-
 
 }
 
@@ -177,7 +175,8 @@ font-size: 15px;
 font-weight: bold;
 border-color: #f2f2f2 ;
 text-decoration: none;
-
+display: flex;
+justify-content: flex-end;
 }
 
 /*POINT INFO*/
@@ -214,8 +213,8 @@ justify-content: space-between;
 article h4
 
 {
-color: red;
-
+/*correction*/
+margin-top: 55px;
 }
 
 article
@@ -243,7 +242,8 @@ display: flex;
 align-items: center;
 height: 115px ;
 width: 250px ;
-border-radius: 10px;
+/*correction*/
+border-radius: 10px 10px 0 0;
 }
 
 a
@@ -310,24 +310,23 @@ border-radius: 3%;
 #p_pop
 {
 background-color: #f2f2f2;
-margin-right: 50px;
+margin-right: 80px;
 display: flex;
 flex-wrap: wrap;
-justify-content: space-around;
-    /*background-color: violet;*/
+justify-content: center;
 }
 
-#p_pop i
-
+.topofpop
 {
-margin-top: 40px;
-   /* background-color:white;*/
+display:flex;
+justify-content: space-around;
 }
 
 #p_pop i[class="fas fa-chart-line"]
 {
 margin-top: 20px;
-font-size: 20px;
+margin-left: 150px;
+font-size: 25px;
 }
 
 .rectangle
@@ -335,11 +334,11 @@ font-size: 20px;
 display: flex;
 flex-direction: column;
 align-items: center;
-
+margin-top: -90px;
 }
-.rectangle_soleil , .rectangle_coeur , .rectangle_eau
- {
-        /*background-color: green;*/
+
+.rectangle_soleil , .rectangle_coeur , .rectangle_bleublanc
+{
 display: flex;
 flex-direction: row;
 margin: 10px 0px 10px 0;
@@ -347,24 +346,35 @@ padding: 5px;
 border-radius: 10px;
 height: 140px;
 width: 350px;
-}
-.rectangle img
-{
-height: 140px ;
-width: 140px;
+/*correction*/
+background-color: white;
 }
 
-.text 
+.rectangle img
+{
+height: 140px;
+width: 140px;
+/*correction*/
+border-radius: 10px 0 0 10px;
+}
+
+
+
+.rectangle .text 
 {
 color: black;
 margin-left: 15px;
-font-size: small;
-    /*background-color: grey;*/
+font-size: 1.3em;
+margin-top: -15px;
 }
 
-.stars
+.rectangle .stars
 {
 color: #0065FC;
+margin-left: -10px;
+
+}
+/*revenir pour positionner les etoiles en margin top et left) 
 }
 
 
@@ -385,7 +395,6 @@ width: 1350px;
 .container h5
 
 {
-    /*color: red;*/
 padding-left: 20px;
 }
 
@@ -393,7 +402,7 @@ padding-left: 20px;
 {
 display: flex;
 justify-content: space-around;
-/*background-color: teal;*/
+
 }
 
 /*quotes supports des grandes photos + ombrages + bordures */
@@ -402,10 +411,9 @@ justify-content: space-around;
 {
 height: 450px;
 width: 309px;
-box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
-    /*pris sur le code du prof*/
+box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);/*pris sur le code du prof*/
 border-radius: 20px;
-    /*background-color: tomato;*/
+
 }
 
 .container .calanques
@@ -435,7 +443,7 @@ border-radius: 20px 20px 0 0;
 padding-left: 3px;
 }
 
-/*placement des élements doublés*/
+/*placement des élèments doublés*/
 .bis_1
 {
 margin-left: 45px;
@@ -446,11 +454,9 @@ margin-right: 45px;
 {
 margin-left: 45px;
 }
-
 /*quotes des supports des petites photos*/
 
 .container .bis_1 .pomegue
-
 {
 height: 250px;
 width: 300px;
@@ -459,7 +465,6 @@ box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
 }
 
 .container .bis_1 .frioul
-
 {
 height: 175px;
 width: 300px;
@@ -473,7 +478,6 @@ margin-top: 30px;
 .container .bis_2 .n_d 
 
 {
-    /*background-color: violet;*/
 height: 205px;
 width: 305px;
 border-radius: 20px;
@@ -483,7 +487,6 @@ padding-top: 2px;
 
 
 .container .bis_2 .longchamp
-
 {
 /*background: yellow;*/
 height: 220px;
@@ -493,8 +496,6 @@ box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
 margin-top: 30px;
 padding: 1px 0 0 3px;
 }
-
-
 /*quotes des petites photos*/
 
 .container .bis_1 .pomegue img
