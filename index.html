@@ -4,7 +4,9 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <link rel="stylesheet" href="css/style.css">
-    
+        <!--mediaqueries-->
+        <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" />
+
         <title>Reservia</title>   
     </head>
 
@@ -13,11 +15,13 @@
         <header>
 
             <div class="logo">
-                <img src="../reservia/src/logo/Reservia.svg" alt="logo_reservia">
+                <img src="../reservia/src/logo/Reservia@3x.png" alt="logo_reservia">
 
             <!--MENU DE NAVIGATION-->
                 <ul>
+                    
                 <li><i><a href="#heb_13">Hébergements</a></I></li>
+                    <li><b><a href="#heb_13">Hébergements</a></b> </li> 
                 <span><li><a href="#act_13title">Activités</a></li></span>
                 <li><strong><a href="inscription.html">S'inscrire</a></strong></li>
                 </ul>
@@ -36,6 +40,7 @@
                     <button class="map_search" type="submit"><i class="fas fa-map-marker-alt"></i></button>
                     <input type="text" name="mrs_13" placeholder="Marseille, France">
                     <button class="search" type="research">Rechercher</button>
+                    <button class="search" type="researchR"><i class="fas fa-search"></i></button>
                 </form>
             </div>
 
@@ -62,7 +67,7 @@
             <h3>Hébergements à Marseille </h3>
                 <div id="heb_13">
                 <a href="#"><div class="square_cannebiere"><img src="../reservia/src/hebergements/4_small/cannebiere.jpg" alt="auberge_la_cannebiere">
-                    <p class="name">Auberge la Cannebiere</p>
+                    <p class="name">Auberge la Cannebière</p>
                     <p class="price">Nuit à partir de<b> 25€</b></p> 
                         <div class="stars">
                             <i class="fas fa-star"></i>
@@ -139,10 +144,11 @@
                         </div>
                     </div>
                 </a>  
+                
             </div>
-
+<div class afficher_plus>
         <h4>Afficher plus</h4>
-
+</div>
             </article>
 
 
@@ -158,7 +164,7 @@
                     <a href="#" class="rectangle_soleil">
                         <img src="../reservia/src/hebergements/4_small/Les_+_populaires/soleil.jpg" alt="hotel_le_soleil_du_matin">
                         <div class="text">
-                            <h4>Hôtel Le soleil du matin</h4>
+                            <p><b>Hôtel Le soleil du matin</p></b>
                             <p>Nuit à partir de <b>128€</b></p>
                             <div class="stars">
                                 <i class="fas fa-star"></i>
@@ -174,7 +180,7 @@
                     <a href="#" class="rectangle_coeur">
                         <img src="../reservia/src/hebergements/4_small/Les_+_populaires/coeur.jpg" alt="au_coeur_de_l_eau_chambres_d_hotes">
                         <div class="text">
-                            <h4>Au coeur de l'eau Chambres d'hôtes</h4>
+                            <p><b>Au coeur de l'eau Chambres d'hôtes</p></b>
                             <p>Nuit à partir de <b>71€</b></p>
                             <div class="stars">
                                 <i class="fas fa-star"></i>
@@ -189,7 +195,7 @@
                     <a href="#" class="rectangle_bleublanc">
                         <img src="../reservia/src/hebergements/4_small/Les_+_populaires/bleu_blanc.jpg" alt="hotel_tout_bleu_et_blanc">
                         <div class="text">
-                            <h4>Hôtel Tout bleu et Blanc</h4>
+                            <p> <b>Hôtel Tout bleu et Blanc</p></b>
                             <p>Nuit à partir de <b>68€</b></p>
                             <div class="stars">
                                 <i class="fas fa-star"></i>
@@ -259,17 +265,14 @@
         <p>Données et confidentialité</P>
         </div>
 
-
         <div id="hebergement">
         <h6>Nos hébergements</h6>
         <p>Charte qualité </p>
         <p>Soumettre votre hotel</p>
         </div>  
             
-
         <div id="assistance">
         <h6>Assistance</h6>
-
         <p>Centre d'aide</p>
         <p>Nous contacter</p>
         </div>

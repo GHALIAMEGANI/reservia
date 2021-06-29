@@ -1,13 +1,10 @@
 body
-{font-family: Raleway, sans-serif;
+{
+font-family: Raleway, sans-serif;
 width: 100%;
-margin-top: 50px}
+margin-top: 50px;
+}
 
-/*
-sur la page style css la formule suivante est à mettre APRES la partie à modifier
-@media screen "not/only/and" (max width: 1280px) ou max width:1024px  
- "not/only/and" ...
-*/  
 
 .logo img
 {
@@ -55,6 +52,22 @@ padding-top: 45px;
 color: #0065FC;
 }
 
+
+li b a
+
+{
+
+
+    
+    /*TROUVER COMMENT FAIRE DISPARAITRE hebergement SUR HTML
+    echec avec OPACITY 0/ VISIBILITY HIDDEN/ DISPLAY NONE 
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    */
+
+}
+
+
 header h1
 {
 font-weight: bold;
@@ -70,6 +83,95 @@ font-size: small;
 font-weight: lighter;
 }
 
+
+@media screen and (max-width: 800px) and (min-width: 400px)
+{
+    .logo
+    {
+    background-color: saddlebrown;
+    }
+    
+    
+    .logo, ul
+    {
+    width: 375px;
+    height: 130px;     
+    }
+        
+    ul
+    {
+        display: flex;
+    flex-flow: column-reverse;
+    background-color:  yellow ;
+    }
+    
+    li
+    {
+    margin-left: 170px;
+    font-weight: bolder;
+    }
+    
+    a
+    {
+    color: #0065FC;
+    
+    text-decoration: none;
+    }
+    
+    span li a 
+    {
+    background-color: white;
+    }
+    li i a
+    {
+    display: none;
+    }
+
+    span li a , li a
+
+{
+    
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.9em;
+
+}
+
+
+li b a
+
+{
+background-color: orange;
+float: right;
+
+
+}
+
+
+/*--------------------------------*/
+    /*changements faits sur header 1 et header 2*/
+    header h1
+    {
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-left: 25px;
+
+    
+    
+    }
+    
+    header h2
+    {
+    font-weight: normal;
+    margin-left: 25px;
+
+    }
+
+}  
+
+/*--------------------------------*/
 
 /*BARRE DE RECHERCHE*/
 
@@ -96,19 +198,54 @@ font-size: 15px;
 color: white;
 }
 
-
 .map button[type=research]
 {
 height: 50px;
 width: 130px;
 border: none;
-position: relative;
+
 left: -10px;
 border-radius: 0 20px 20px 0;
 color: #f2f2f2;
 font-size: 15px;
 background-color:#0065FC;
 }
+
+.map button[type=researchR]
+
+{
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);    
+}
+
+
+
+
+@media screen and (max-width: 800px) and (min-width: 400px)
+{
+
+    .map button[type="submit"]
+    {
+    margin: 20px 0 0 25px;
+    }
+    .map button[type=research]
+    {
+    display: none;
+    }
+    .map button[type=researchR]
+    {   
+    height: 50px;
+    width: 50px;
+    border: none;
+    position: relative;
+    left: -20px;
+    border-radius: 20%;
+    color: #f2f2f2;
+    font-size: 15px;
+    background-color: #0065FC; 
+    }
+}
+
 
 /*FILTRE TYPE DE LOGEMENT*/
 
@@ -179,6 +316,41 @@ display: flex;
 justify-content: flex-end;
 }
 
+@media screen and (max-width: 800px) and (min-width: 400px)
+{
+    .filter
+    {
+    width: 335px; 
+    height: 250px;
+    margin: 30px 0 0 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    }
+
+    .filter h1
+    {
+    width: 370px; 
+    height: 25px;  
+    margin-left: 1px;  
+    }
+
+    .filter button
+    {
+    border-style: solid;
+    border-color: gainsboro
+    }
+
+    .filter :hover 
+    {
+    border-style: dashed;
+    border-color:#deebff;
+    transition: 0.5s ;
+    }
+
+}
+
+
 /*POINT INFO*/
 
 .info i
@@ -202,19 +374,26 @@ display: flex;
 justify-content: flex-start;
 }
 
+
+@media screen and (max-width: 800px) and (min-width: 400px)
+
+{
+    .info
+    {
+    width: 360px;
+    height: 40px;
+    margin: 40px 0 40px 25px ;
+    }
+
+}
+
+
 /*HEBERGEMENTS A MARSEILLE */
 
 section
 {
 display: flex;
 justify-content: space-between;
-}
-
-article h4
-
-{
-/*correction*/
-margin-top: 55px;
 }
 
 article
@@ -225,6 +404,11 @@ background-color: #f2f2f2;
 border-radius: 3%;
 padding-left: 40px;
 margin-left: 50px;
+
+}
+h4
+{
+margin-top: 300px;
 }
 
 .square_cannebiere ,.square_port ,.square_mouette , .square_mer , .square_panier , .square_amina
@@ -234,9 +418,10 @@ width: 254px;
 background-color: white;
 border-radius: 7px; 
 padding: 4px 0 0 4px;
+
 }
 
-img
+article img
 {
 display: flex;
 align-items: center;
@@ -244,12 +429,12 @@ height: 115px ;
 width: 250px ;
 /*correction*/
 border-radius: 10px 10px 0 0;
+object-fit: cover;
 }
 
-a
+article a
 {
 text-decoration: none;
-text-align: flex start;
 }
 
 .name
@@ -275,13 +460,15 @@ list-style-type: none;
 color: #0065FC;
 padding-left: 10px;
 }
-/*trouver une alternative aux balise ul li*/
+
 
 #heb_13
 {
-display: flex ;
-flex-flow: wrap;
-justify-content: space-between;
+height: 205px;
+width: 865px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 .square_cannebiere ,.square_port ,.square_mouette
@@ -294,6 +481,68 @@ margin-right: 30px
 
 {
 margin-right: 30px;
+
+}
+
+
+@media screen and (max-width: 800px) and (min-width: 400px)
+{
+    section
+    {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: -10px;
+    }
+    
+    aside , #p_pop
+    {
+    border-radius: 0%;
+    
+    }
+
+    #p_pop
+    {
+    padding-right: 20px;
+    }
+
+
+    h4
+    {
+    margin-top: 1130px; /*quotes énormes */
+    padding-left: 13px;
+    font-weight: bolder;
+    }
+
+
+    article /*(=hebergement a marseille)*/
+    {
+    width: 375px ;
+    height: 1450px;
+    margin-top: 35px;
+    margin-left: 0px;
+    border-radius: 0%;
+    display: flex;
+    flex-flow: wrap; 
+    background-color: white;  
+    }
+    
+    article img
+    {
+    width: 340px ;
+    object-fit: cover;
+    }
+
+    .square_cannebiere ,.square_port , .square_mouette , .square_mer , .square_panier , .square_amina
+    {
+    width: 340px;
+    margin-bottom: 15px;
+    border-radius: 7px; 
+    padding: 4px 0 0 2px;
+    box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
+
+    }  
+    
+    
 }
 
 
@@ -305,7 +554,6 @@ height: 635px;
 width: 425px;
 border-radius: 3%;
 }
-
 
 #p_pop
 {
@@ -335,6 +583,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 margin-top: -90px;
+
 }
 
 .rectangle_soleil , .rectangle_coeur , .rectangle_bleublanc
@@ -356,9 +605,8 @@ height: 140px;
 width: 140px;
 /*correction*/
 border-radius: 10px 0 0 10px;
+object-fit: cover;
 }
-
-
 
 .rectangle .text 
 {
@@ -367,12 +615,10 @@ margin-left: 15px;
 font-size: 1.3em;
 margin-top: -15px;
 }
-
 .rectangle .stars
 {
 color: #0065FC;
 margin-left: -10px;
-
 }
 /*revenir pour positionner les etoiles en margin top et left) 
 }
@@ -382,8 +628,9 @@ margin-left: -10px;
 
 #act_13title
 {
-margin-left: 50px;
+margin: 50px 0 0 50px;
 }
+
 
 .act_13 
 {
@@ -402,7 +649,6 @@ padding-left: 20px;
 {
 display: flex;
 justify-content: space-around;
-
 }
 
 /*quotes supports des grandes photos + ombrages + bordures */
@@ -413,7 +659,6 @@ height: 450px;
 width: 309px;
 box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);/*pris sur le code du prof*/
 border-radius: 20px;
-
 }
 
 .container .calanques
@@ -432,6 +677,7 @@ height: 390px;
 width: 305px;
 border-radius: 20px 20px 0 0;
 padding-left: 3px;
+object-fit: cover;
 
 }
 
@@ -441,6 +687,7 @@ height: 390px;
 width: 305px;
 border-radius: 20px 20px 0 0;
 padding-left: 3px;
+object-fit: cover;
 }
 
 /*placement des élèments doublés*/
@@ -503,6 +750,7 @@ padding: 1px 0 0 3px;
 height: 180px;
 width: 300px;
 border-radius: 20px 20px 0 0;
+object-fit: cover;
 }
 
 .container .bis_1 .frioul img
@@ -510,6 +758,7 @@ border-radius: 20px 20px 0 0;
 height: 110px;
 width: 300px;
 border-radius: 20px 20px 0 0;
+object-fit: cover;
 }
 
 .container .bis_2 .n_d img
@@ -519,26 +768,97 @@ width: 300px;
 border-radius: 20px 20px 0 0;
 margin-left: 2px;
 margin-top: 3px;
+object-fit: cover;
 }
 
 .container .bis_2 .longchamp img
 {
-height: 160x;
+height: 160px;
 width: 300px;
 border-radius: 20px 20px 0 0;
 margin-top: 4px;
+
 }
 
+@media screen and (max-width: 800px) and (min-width: 400px)
+{
+
+    #act_13title
+    {
+    margin-left: 25px;
+    }
+    
+    .container
+    {
+    width: 375px;
+    height: 1360px;
+    display: flex;
+    flex-direction: column;
+    
+    
+    }
+    
+    .container .vieux_port , .container .calanques
+    {
+    width: 340px;
+    height: 200px;
+    margin-left: -35px;
+    
+    }
+
+    .container .vieux_port img , .container .calanques img
+    {
+    width: 340px;
+    height: 140px;
+    object-fit: cover;
+    }
+
+    /*placement des élèments doublés*/
+    .bis_1, .bis_2
+    {
+    margin-left: 3px;
+    
+    }
+
+    
+    /*quotes des supports des petites photos*/
+
+    .container .bis_1 .pomegue ,
+    .container .bis_1 .frioul ,
+    .container .bis_2 .n_d ,
+    .container .bis_2 .longchamp
+    {
+        width: 340px;
+        height: 200px;
+        margin-left: -35px;
+    }
+
+    .container .bis_1 .pomegue img ,
+    .container .bis_1 .frioul img ,
+    .container .bis_2 .n_d img ,
+    .container .bis_2 .longchamp img 
+    
+    {   
+        width: 340px;
+        height: 140px;
+        object-fit: cover;
+    }
+
+   
+}
 /*changer les photos vieux port et pomegue car depixelises floues*/
 
 
 footer
 {
+width: 100%;
+height: 200px;
 margin-top: 60px ;
 background-color:#f2f2f2;
 display: flex;
-justify-content: flex-start;   
+justify-content: flex-start;  
 }
+
 
 footer p
 {
@@ -563,4 +883,29 @@ margin-left: 200px;
 #assistance
 {
 margin-left: 300px;
+}
+
+@media screen and (max-width: 800px) and (min-width: 400px)
+{
+    footer
+    {
+    width: 450px;
+    height: 490px;
+    margin-top: 950px ;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -10px;
+    }
+
+    #hebergement , #assistance , #a_propos
+    {
+    margin-left: 35px;
+
+    }
+
+
+    
+
 }
