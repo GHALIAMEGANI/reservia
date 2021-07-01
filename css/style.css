@@ -5,7 +5,6 @@ width: 100%;
 margin-top: 50px;
 }
 
-
 .logo img
 {
 width: 100px;
@@ -18,9 +17,15 @@ margin-left: 41px;
 {
 display: flex;
 justify-content: space-between;
+flex-wrap: wrap;
 }
 
 /* MENU DE NAVIGATION*/
+
+.logo p 
+{
+display: none;
+}
 
 ul
 {
@@ -52,22 +57,6 @@ padding-top: 45px;
 color: #0065FC;
 }
 
-
-li b a
-
-{
-
-
-    
-    /*TROUVER COMMENT FAIRE DISPARAITRE hebergement SUR HTML
-    echec avec OPACITY 0/ VISIBILITY HIDDEN/ DISPLAY NONE 
-    position: absolute;
-    clip: rect(1px 1px 1px 1px);
-    */
-
-}
-
-
 header h1
 {
 font-weight: bold;
@@ -83,90 +72,60 @@ font-size: small;
 font-weight: lighter;
 }
 
+/******************LOGO ET NAVIGATION*********************/
 
 @media screen and (max-width: 800px) and (min-width: 400px)
 {
-    .logo
-    {
-    background-color: saddlebrown;
-    }
     
-    
-    .logo, ul
+    .logo 
+    {margin: -15px 0 0 -10px;}
+
+    .logo p 
     {
-    width: 375px;
-    height: 130px;     
-    }
-        
-    ul
-    {
-        display: flex;
-    flex-flow: column-reverse;
-    background-color:  yellow ;
-    }
-    
-    li
-    {
-    margin-left: 170px;
-    font-weight: bolder;
-    }
-    
-    a
-    {
+    margin-right: 180px;
     color: #0065FC;
-    
-    text-decoration: none;
+    font-weight : bold ;
+    display: inline;
     }
-    
-    span li a 
-    {
-    background-color: white;
+
+    ul
+    {border-bottom: 3px inset  #0065FC;
+    padding-bottom :10px;
+    margin-top: 25px
     }
+ 
+    li
+    {margin-left: 25px;}
+      
+    
+    li strong a
+    {visibility: hidden;}
+
+    span li a /*activité*/
+    {font-weight: bold;}
+    
+
     li i a
     {
-    display: none;
+    border-top: none;
+    padding-bottom: unset;
+    font-style: normal;
+    font-weight: bold;
     }
-
-    span li a , li a
-
-{
     
-    display: flex;
-    justify-content: flex-start;
-    font-size: 0.9em;
-
-}
-
-
-li b a
-
-{
-background-color: orange;
-float: right;
-
-
-}
-
-
-/*--------------------------------*/
-    /*changements faits sur header 1 et header 2*/
     header h1
     {
     width: 250px;
     height: 40px;
     font-weight: bold;
     font-size: 1.1em;
-    margin-left: 25px;
-
-    
-    
+    margin: 20px 0 0 25px;
     }
     
     header h2
     {
     font-weight: normal;
     margin-left: 25px;
-
     }
 
 }  
@@ -219,7 +178,7 @@ background-color:#0065FC;
 }
 
 
-
+/******************BOUTON DE RECHERCHE*********************/
 
 @media screen and (max-width: 800px) and (min-width: 400px)
 {
@@ -246,6 +205,7 @@ background-color:#0065FC;
     }
 }
 
+/***********************************************************/
 
 /*FILTRE TYPE DE LOGEMENT*/
 
@@ -316,6 +276,8 @@ display: flex;
 justify-content: flex-end;
 }
 
+/**********************FILTRES*****************************/
+
 @media screen and (max-width: 800px) and (min-width: 400px)
 {
     .filter
@@ -350,6 +312,11 @@ justify-content: flex-end;
 
 }
 
+/***********************************************************/
+
+
+
+
 
 /*POINT INFO*/
 
@@ -374,7 +341,7 @@ display: flex;
 justify-content: flex-start;
 }
 
-
+/**********************POINT INFO ************************/
 @media screen and (max-width: 800px) and (min-width: 400px)
 
 {
@@ -386,7 +353,7 @@ justify-content: flex-start;
     }
 
 }
-
+/********************************************************/
 
 /*HEBERGEMENTS A MARSEILLE */
 
@@ -411,7 +378,12 @@ h4
 margin-top: 300px;
 }
 
-.square_cannebiere ,.square_port ,.square_mouette , .square_mer , .square_panier , .square_amina
+.square_cannebiere ,
+.square_port ,
+.square_mouette , 
+.square_mer , 
+.square_panier , 
+.square_amina
 {
 height: 200px;
 width: 254px;
@@ -484,6 +456,7 @@ margin-right: 30px;
 
 }
 
+/******************LES PLUS POPULAIRES*********************/
 
 @media screen and (max-width: 800px) and (min-width: 400px)
 {
@@ -491,20 +464,16 @@ margin-right: 30px;
     {
     display: flex;
     flex-direction: column-reverse;
-    margin-left: -10px;
+    margin-right: 20%;
+    
     }
+    
     
     aside , #p_pop
     {
     border-radius: 0%;
-    
-    }
-
-    #p_pop
-    {
-    padding-right: 20px;
-    }
-
+    width: 100%; /*ATTENTION (demandez à ERIC si je garde ou si j'enleve*/  
+}
 
     h4
     {
@@ -514,7 +483,16 @@ margin-right: 30px;
     }
 
 
-    article /*(=hebergement a marseille)*/
+    .rectangle_soleil , 
+    .rectangle_coeur , 
+    .rectangle_bleublanc
+    {
+    box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
+    }
+
+/******************HEBERGEMENT A MARSEILLE*********************/
+
+    article
     {
     width: 375px ;
     height: 1450px;
@@ -531,20 +509,23 @@ margin-right: 30px;
     width: 340px ;
     object-fit: cover;
     }
-
-    .square_cannebiere ,.square_port , .square_mouette , .square_mer , .square_panier , .square_amina
+    .square_cannebiere ,
+    .square_port , 
+    .square_mouette , 
+    .square_mer , 
+    .square_panier , 
+    .square_amina
     {
     width: 340px;
     margin-bottom: 15px;
     border-radius: 7px; 
     padding: 4px 0 0 2px;
     box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
-
     }  
-    
-    
+           
 }
 
+/*******************************************************/
 
 /*LES PLUS POPULAIRES*/
 
@@ -631,7 +612,6 @@ margin-left: -10px;
 margin: 50px 0 0 50px;
 }
 
-
 .act_13 
 {
 margin: 20px 0 0 50px;
@@ -640,7 +620,6 @@ width: 1350px;
 }
 
 .container h5
-
 {
 padding-left: 20px;
 }
@@ -777,9 +756,10 @@ height: 160px;
 width: 300px;
 border-radius: 20px 20px 0 0;
 margin-top: 4px;
-
 }
 
+
+/******************ACTIVITES MARSEILLE*********************/
 @media screen and (max-width: 800px) and (min-width: 400px)
 {
 
@@ -793,60 +773,39 @@ margin-top: 4px;
     width: 375px;
     height: 1360px;
     display: flex;
-    flex-direction: column;
-    
-    
+    flex-direction: column;    
     }
     
-    .container .vieux_port , .container .calanques
+    .container .vieux_port , 
+    .container .calanques ,
+    .container .bis_1 .pomegue ,
+    .container .bis_1 .frioul ,
+    .container .bis_2 .n_d ,
+    .container .bis_2 .longchamp
     {
     width: 340px;
     height: 200px;
-    margin-left: -35px;
-    
     }
 
-    .container .vieux_port img , .container .calanques img
+    .container .vieux_port img , 
+    .container .calanques img ,
+    .container .bis_1 .pomegue img ,
+    .container .bis_1 .frioul img ,
+    .container .bis_2 .n_d img ,
+    .container .bis_2 .longchamp img 
     {
     width: 340px;
     height: 140px;
     object-fit: cover;
     }
 
-    /*placement des élèments doublés*/
+
     .bis_1, .bis_2
     {
     margin-left: 3px;
-    
     }
-
-    
-    /*quotes des supports des petites photos*/
-
-    .container .bis_1 .pomegue ,
-    .container .bis_1 .frioul ,
-    .container .bis_2 .n_d ,
-    .container .bis_2 .longchamp
-    {
-        width: 340px;
-        height: 200px;
-        margin-left: -35px;
-    }
-
-    .container .bis_1 .pomegue img ,
-    .container .bis_1 .frioul img ,
-    .container .bis_2 .n_d img ,
-    .container .bis_2 .longchamp img 
-    
-    {   
-        width: 340px;
-        height: 140px;
-        object-fit: cover;
-    }
-
-   
 }
-/*changer les photos vieux port et pomegue car depixelises floues*/
+/**********************************************************/
 
 
 footer
@@ -868,6 +827,7 @@ font-size: smaller ;
 footer h6
 {
 font-size: medium;
+margin-bottom: 0;
 }
 
 #a_propos
@@ -889,7 +849,7 @@ margin-left: 300px;
 {
     footer
     {
-    width: 450px;
+    width: 100%;
     height: 490px;
     margin-top: 950px ;
     background-color: #f2f2f2;
@@ -902,10 +862,5 @@ margin-left: 300px;
     #hebergement , #assistance , #a_propos
     {
     margin-left: 35px;
-
     }
-
-
-    
-
 }
