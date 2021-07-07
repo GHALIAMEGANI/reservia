@@ -3,14 +3,10 @@
 Objet : Corection sur projet 2 
 
 Bonjour Eric, 
-Voici comme convenu les correction apportéees sur 
-1- Les border-radius des pic hebergement a marseille et les plus populaires 
-2- Les alignements faux du "afficher plus"
-3-Les espaces sur les boutons du filtres. 
 
-J'ai noté que lorque je reduis ma page de 50% tout mon code est decalé, je ne comprends pas s'il s'agit d'une balise non fermée ou si c'est mon affichage d'ordinateur qui déconne. 
-du coup je dois regler ce probleme avec de passer a la version responsive. 
-je t'enverrai la version responsive dans les meilleurs delais. 
+J'ai essayé toute la journée de réparer les conneries de la veille sans y parvenir 
+La version desktop est correcte normalement, j'ai compris le principe de la transition sur des media queries mais je suis tres loin du compte  
+Je te laisse regarder et si tu veux faire un point vendredi fais le moi savoir ... je compte bosser ce week end pour boucler tout ce que tu vas m'expliquer sur mes erreurs.. Je n'arrive pas a enlever ni les flexbox ni les marges  
 Très cordialement, 
 
 Ghalia 
