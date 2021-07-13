@@ -292,7 +292,7 @@ border-radius: 3%;
 #p_pop
 {
 background-color: #f2f2f2;
-margin-right: 80px;
+margin-right: 50px;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -436,7 +436,8 @@ height: 175px;
 width: 300px;
 border-radius: 20px;
 box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
-margin-top: 30px;
+margin-top: 27px;
+
 }
 
 .container .bis_2 .n_d 
@@ -491,9 +492,91 @@ margin-top: 4px;
 object-fit: cover;
 }
 
-/*PIED DE PAGE */
+/*FOOTER ancien code */
 
 footer
+{
+margin-top: 60px ;
+background-color:#f2f2f2;
+display: flex;
+justify-content: flex-start;   
+}
+
+footer
+{position: absolute;
+left: 0px;
+width: 100%;}
+
+footer p
+{
+font-size: smaller ;
+}
+
+footer h6
+{
+font-size: medium;
+}
+
+#a_propos
+{
+margin-left: 50px;
+}
+
+#hebergement
+{
+margin-left: 200px;
+}
+
+#assistance
+{
+margin-left: 300px;
+}
+
+
+/*
+
+footer
+
+{background-color: #f2f2f2;
+width: 100%;
+height: 200px;
+display: flex;
+}
+
+footer
+{
+position:absolute;
+left: 0px;
+margin-top: 60px;
+}
+
+ol
+{
+list-style-type: none;
+margin-left: 0px;
+}
+
+ol li b a 
+
+{margin-left: 0px;
+background-color: aqua;
+width: 440px;
+height: 150px;
+
+}
+
+ol li
+
+{
+    background-color: yellow;
+    margin-left: 20px;
+    font-size: 1.1em;
+}
+
+
+/*PIED DE PAGE ***************************
+
+.piedpage
 {
 width: 1440px;
 height: 200px;
@@ -503,22 +586,22 @@ display: flex;
 justify-content: flex-start;  
 }
 
-footer p
+.piedpage p
 {font-size: smaller ;}
 
-footer h6
+.piedpage h6
 {
 font-size: medium;
 margin-bottom: 0;
 }
 
-#a_propos
+.a_propos
 {margin-left: 50px;}
 
-#hebergement
+.hebergement
 {margin-left: 200px;}
 
-#assistance
+.assistance
 {margin-left: 300px;}
 
 
@@ -533,50 +616,324 @@ margin-bottom: 0;
 @media only screen and (max-width: 386px) {}
 */
 
-/*1ERE TRANSITION*/
+/*1ERE TRANSITION = FORMAT TABLETTE "PAYSAGE"*/
 @media only screen and (max-width: 1023px) 
-/*Reduction des 6 cartes (hebergement) et des 3 cartes (les plus populaires*/
 {
-    article 
-    {background-color: white}       
-        
-    article
+
+    form button[type="submit"]
+    {margin-left : 45px}
+
+    .filter h1
     {
-    width: 375px;
-    height: 1350px;
+    position: relative;
+    left: -2px;
     }
+
+     section   
+    {
+    display: flex;
+    flex-direction: column-reverse
+    }
+
+    .topofpop
+    {
+    width: 400px ;
+    height: 40px;
+    position: absolute;
+    left: 40px;
+    }
+    
+    #p_pop i[class="fas fa-chart-line"]
+    {
+    visibility: hidden;
+    }
+
+/*IMPORTER UNE FLECHE ET LA PLACER EN AHUTE à DROITE DE LA DIV */
+
+.rectangle
+
+    {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1225px;
+    height: 200px;
+    margin-top: 60px ;
+    margin-left: 30px;
+    margin-right: 40px;
+
+    }
+
+    .rectangle_soleil ,
+    .rectangle_coeur ,
+    .rectangle_bleublanc
+    { 
+    width: 270px;
+    height: 150px;
+    }
+
+
+    .rectangle_soleil img ,
+    .rectangle_coeur img ,
+    .rectangle_bleublanc img
+
+    { width: 75px;
+    height: 150px;
+    }
+
+
+    aside , #p_pop
+    {
+    background-color:#f2f2f2;
+    width: 1023px;
+    height: 400px;
+    margin-left: -10px;
+    border-radius: 0%;
+
+    }
+
+
+    /*****HEBERGEMENT A MARSEILLE******/
+    article 
+    {
+    width: 1024px;
+    height: 600px; 
+    }       
+
+    article , #heb_13
+    {
+    margin-top: 30px;
+    margin-left: 2px;
+    background-color: white;
+    }
+        
+
     article img
     {
-    width: 340px ;
+    width: 248px ;
     object-fit: cover;
-    }    
+    margin-left: -1px;
+    border-radius: 10px;
+    } 
+
     .square_cannebiere , .square_port , .square_mouette , .square_mer , .square_panier , .square_amina
     {
-    width: 340px;
-    margin-bottom: 15px;
-    border-radius: 8px; 
-    box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
-    }  
-    
-    h3
-    {margin: 10px 0 30px 30px;}
+    width: 250px;
+    margin-bottom: 55px;
+    margin-right: 30px;   
+}
 
-/*2EME TRANSITION*/
+    /* Activites à Marseille*/
+
+    #act_13title
+    {
+        margin-top: 30px;
+    margin-left: 45px;
+    }
+
+    .act_13 
+    {
+    height: 600px;
+    width: 1024px;
+    display: flex;
+    margin-left: -15px;
+    }
+
+    .container
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container .vieux_port ,
+    .container .calanques ,
+    .container .bis_1 .pomegue ,
+    .container .bis_1 .frioul ,
+    .container .bis_2 .n_d ,
+    .container .bis_2 .longchamp
+    {
+    height: 250px ;
+    width: 300px;
+    box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
+    border-radius: 20px;
+    margin-left: 35px;
+    }
+
+
+    .container .vieux_port img ,
+    .container .calanques img ,
+    .container .bis_1 .pomegue img ,
+    .container .bis_1 .frioul img ,
+    .container .bis_2 .n_d img ,
+    .container .bis_2 .longchamp img
+    {
+    height: 200px;
+    width: 298px;
+    border-radius: 20px 20px 0 0;
+    padding-left: 3px;
+    object-fit: cover;
+    }
+
+    .bis_1 ,
+    .bis_2
+    {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-direction: row;
+    }
+
+    .container .bis_2 .longchamp ,
+    .container .bis_1 .frioul 
+    {
+        margin-top: 0px;
+    }
+
+}
+
+/*2EME TRANSITION = FORMAT TABLETTE "PORTRAIT"*/
 @media only screen and (max-width: 960px) 
-/* Suppression des espaces entre les types de logements pour une meilleur transition*/
+/* 1.Suppression des espaces entre les types de logements pour une meilleur transition*/
 {    
     .filter
     {
     width: 800px; 
     height: 50px;
-    margin: 30px 0 0 25px ;}
-
-    .filter h1
-    {width: 370px;
-    height: 25px;
-    margin-left: 1px;}
+    margin-left: 35px;
 }
 
+    .filter h1
+    {margin-left: 10px;}
+
+/*
+    #p_pop i[class="fas fa-chart-line"]
+    {
+    visibility: hidden;
+    }
+*/
+    .rectangle
+    {   
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap}
+
+    .rectangle_soleil ,
+    .rectangle_coeur ,
+    .rectangle_bleublanc
+    { 
+    width: 570px;
+    height: 150px;
+    }
+
+    .rectangle_soleil img ,
+    .rectangle_coeur img ,
+    .rectangle_bleublanc img
+
+    { width: 175px;
+    height: 150px;
+    }
+
+    aside , #p_pop
+    {
+    background-color:#f2f2f2;
+    width: 100%;
+    height: 650px;
+    }
+
+    /*Hebergements à Marseille*/
+
+    article 
+    {
+    width: 1024px;
+    height: 600px;    
+    }       
+
+    article , #heb_13
+    {
+    margin-left: 2px;
+    background-color: white;
+    }
+        
+
+    article img
+    {
+    width: 300px ;
+    object-fit: cover;
+    margin-left: -1px;
+    border-radius: 10px;
+    } 
+
+    .square_cannebiere , .square_port , .square_mouette , .square_mer , .square_panier , .square_amina
+    {
+    width: 400px;
+    margin-bottom: 1px;
+    margin-right: -95px;} 
+
+
+    h4
+
+    {visibility: hidden;}
+
+    /*Activites à Marseille*/
+
+    #act_13title
+    {
+    margin-top: 160px;
+    margin-left: 45px;
+    }
+
+    .act_13 
+    {
+    height: 600px;
+    width: 800px;
+    display: flex;
+    margin-left: 5px;
+    }
+
+    .container
+    {
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+    .container .vieux_port , .container .calanques , .container .bis_1 .pomegue ,
+    .container .bis_1 .frioul , .container .bis_2 .n_d , .container .bis_2 .longchamp
+    {
+    height: 250px ;
+    width: 210px;
+    box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
+    border-radius: 20px;    
+    }
+
+
+    .container .vieux_port img , .container .calanques img ,
+    .container .bis_1 .pomegue img , .container .bis_1 .frioul img ,
+    .container .bis_2 .n_d img , .container .bis_2 .longchamp img
+    {
+    height: 200px;
+    width: 209px;
+    border-radius: 20px 20px 0 0;
+    padding-left: 3px;
+    object-fit: cover;
+    }
+
+    .bis_1 ,
+    .bis_2
+    {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    }
+
+    .container .bis_2 .longchamp ,
+    .container .bis_1 .frioul 
+    {
+        margin-top: 0px;
+    }
+
+}
+
+ 
 /*3EME TRANSITION*/
 @media only screen and (max-width: 650px) 
 /*Point de rupture ideale pour la barre uderline*/
@@ -590,13 +947,15 @@ margin-bottom: 0;
     margin-right: 0px;
     color: #0065FC;
     font-weight : bold ;
-    display: inline;
+    display: inline;    
     }
    
     .slogan
     {border-top: 3px solid #0065FC;
     margin-left: -10px;
     margin-right: 250px;}
+
+
 
     ul
     {height: 25px;
@@ -631,9 +990,10 @@ margin-bottom: 0;
     }
 /*Bouton de recharche */
 
-    form button[type="submit"]
+    form button[type=submit]
     {
     margin: 20px 0 0 25px;
+    
     }
     form button[class=Desktop]
     {
@@ -655,13 +1015,19 @@ margin-bottom: 0;
 
 /*Filtres types de logements*/
 
-    .filter
-    {
-    width: 335px; 
-    height: 250px;
-    margin: 30px 0 0 25px ;
-    display: block;}
+.filter h1
+{
+    margin-right: 2px;
+}
+.filter
+{
+width: 430px;
+margin-bottom: 75px;
+    
+display: flex;
+    flex-flow: wrap;
 
+/*
     .filter  h1
     {
     width: 55px; 
@@ -701,47 +1067,59 @@ margin-bottom: 0;
     {
     display: flex;
     flex-direction: column-reverse;
-    margin-left: -10px;
+    margin-left: -15px;
     margin-right: 20%;    
     }
        
     aside , #p_pop
     {
-    border-radius: 0%;}
+    border-radius: 0%;
+    background-color:#f2f2f2;
+    height: 590px;}
     
-    #p_pop
-    {padding-right: 20px;}
+    .topofpop h3
+    {background-color: yellow ;
+    margin-right: px;}
+
+     [class="fas fa-chart-line"]
+    {background-color: aqua;
+        margin-right: -50px;
+    }
 
     .rectangle_soleil , .rectangle_coeur , .rectangle_bleublanc
-    {
-    box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);
+    {box-shadow: 3px 4px 3px 1px rgba(196, 196, 196, 0.541);}
+    
+    h3
+    { 
+    position: relative;
+    bottom: -5px ;
+    right: 90px ;
+    top:
     }
     
-       article h3
-    {
-    margin-left: 0px; /*ne fonctionne pas CA GARDE LES MARGES DE LA VERSION DESKTOP*/
-    margin-right: 0px;  
-    }
-/*Hébergements à Marseille*/
-
+    /*Hébergements à Marseille*
     #heb_13
     {
-    background-color: teal;
     width: 375px;
     height: 1335px;
-    margin-left: 0px; /*ne fonctionne pas CA GARDE LES MARGES DE LA VERSION DESKTOP*/
-    margin-right: 0px;
+    position: absolute;
+    left: 25px;
     }
     
-    article h4
+    h4
     {        
     background-color: tomato;
+    position: absolute;
+    left : 50px
     }
    
-/*Activités à Marseille*/
-    #act_13title
+/*Activités à Marseille*
+    #act_13title h3
     {
-    margin-left: 25px;}
+    margin-left: 60px;
+    margin-bottom: 25px;
+    margin-top: 110px ;
+    }
 
     .container
     {
@@ -771,10 +1149,65 @@ margin-bottom: 0;
     {
     margin-left: 3px;
     }
-    
-/*Footer*/
-    #hebergement , #assistance , #a_propos
-    {
-    margin-left: 35px;}
+/*
 
-}      
+
+footer
+{background-color: #f2f2f2;
+position: relative;
+left: -75px;
+}
+
+ol
+{list-style-type: none;
+margin-top: 50px;
+}
+
+
+
+/*
+
+    
+    .piedpage
+    {
+    background-color: #f2f2f2;
+    display: block;
+    position: absolute;
+    left: -1px;  
+    }
+
+    .hebergement
+    {
+    background-color: #f2f2f2;
+    margin-left: 1px;
+    text-align: justify;
+    }
+
+    .assistance
+    {
+    background-color: #f2f2f2;
+    margin-left: 1px;
+    }
+}
+    
+    /*
+    footer
+    {
+   display: block;
+   background-color: white;
+   position: absolute;
+   left: 35px;}
+    
+    footer p
+    {}
+    
+    #a_propos
+    {
+    margin-left: 0px;
+    }
+    
+    
+    
+    
+}    
+
